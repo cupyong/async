@@ -1,0 +1,26 @@
+{
+  "name": "async",
+  "version": "1.0.0",
+  "description": "async",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cupyong/async.git"
+  },
+  "keywords": [
+    "async"
+  ],
+  "author": "cupyong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cupyong/async/issues"
+  },
+  "homepage": "https://github.com/cupyong/async#readme",
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "underscore": "^1.8.3"
+  }
+}
