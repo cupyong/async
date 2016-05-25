@@ -6,7 +6,7 @@ var async = require('async');
 //我们可以使用compose把异步函数f、g、h，组合成f(g(h()))的形式，通过callback得到返回值，请看示例：
 
 function fn1(n, callback) {
-    setTimeout(function () {
+        setTimeout(function () {
         callback(null, n + 1);
     }, 1000);
 }

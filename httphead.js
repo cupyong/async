@@ -11,12 +11,13 @@
 // );
 // req.end();
 
-var _= require('underscore');
+var _ = require('underscore');
 
-var map =_.map([1, 2, 3], function(num){ return num * 3; });
+var map = _.map([1, 2, 3], function (num) { return num * 3; });
 
 console.log(map)
 
-var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
+var sum = _.reduce([1, 2, 3], function (memo, num) { return memo + num; }, 0);
 
 console.log(sum)
+

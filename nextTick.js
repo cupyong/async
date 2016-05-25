@@ -10,12 +10,12 @@ var async = require('async');
 
 var calls = [];
 
-async.nextTick(function() {
+async.nextTick(function () {
     calls.push('two');
 });
 
 calls.push('one');
 calls.push('three');
-async.nextTick(function() {
-    console.log(calls); 
+async.nextTick(function () {
+    console.log(calls);
 });

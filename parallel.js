@@ -14,19 +14,19 @@ var async = require('async');
 //     });
 var oldtime = (new Date()).getTime()
 async.parallel([
-        function(callback){
-            setTimeout(function(){
-                callback(null, 'one')
-            },1000);
-        },
-        function(callback){
-            setTimeout(function(){
-                callback(null, 'two')
-            },1000);
-        }
-    ],
-    function(err, results){
-        var newTime = (new Date()).getTime() ;
-        console.log(newTime-oldtime)
+    function (callback) {
+        setTimeout(function () {
+            callback(null, 'one')
+        }, 1000);
+    },
+    function (callback) {
+        setTimeout(function () {
+            callback(null, 'two')
+        }, 1000);
+    }
+],
+    function (err, results) {
+        var newTime = (new Date()).getTime();
+        console.log(newTime - oldtime)
         console.log(results);
     });
